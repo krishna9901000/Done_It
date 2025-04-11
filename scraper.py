@@ -13,6 +13,8 @@ import undetected_chromedriver as uc
 
 BASE_URL = "https://internshala.com/internships/"
 SEARCH_QUERY = ['Software-Development', 'Data-Science', 'Machine-Learning', 'Web-Development']
+
+
 # === DRIVER SETUP ===
 def setup_driver():
     options = uc.ChromeOptions()
@@ -83,7 +85,6 @@ if __name__ == "__main__":
     driver = setup_driver()
     for query in SEARCH_QUERY:
         extract_data(driver,query)
-        
         time.sleep(2)
     print("Driver setup complete.")
     driver.quit()

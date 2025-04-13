@@ -24,4 +24,4 @@ jobs:
           pip install selenium undetected-chromedriver beautifulsoup4 pandas
 
       - name: Run scraper
-        run: python script.py
+        run: python3 script.py

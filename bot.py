@@ -25,12 +25,13 @@ async def whatsapp_reply(request: Request):
 
     if incoming_msg == "get_notification":
         try:
-            df = pd.read_csv('internships.csv')
-            if df.empty:
+            df1 = pd.read_csv('internships_internshala.csv')
+            df2 = pd.read_csv("")
+            if df1.empty:
                 msg.body("🚫 No internships available right now.")
             else:
                 messages = []
-                for job in df.itertuples(index=False):
+                for job in df1.itertuples(index=False):
                     messages.append(
                         f"📌 *{job.Title}*\n🏢 {job.Company}\n📍 {job.Location}\n💰 {job.Stipend}\n🔗 {job.Link}\n"
                     )

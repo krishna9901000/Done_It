@@ -17,6 +17,7 @@ GLASSDOOR_BASE_URL = "https://www.glassdoor.co.in/Job/index.html"
 SEARCH_QUERY = ['Software-Development', 'Data-Science', 'Machine-Learning', 'Web-Development']
 
 COOKIE_FILE = 'glassdoor_cookies.json'
+LINKEDIN_BASE_URL = "https://www.linkedin.com/jobs/search/?keywords="
 
 
 # === DRIVER SETUP ===
@@ -72,17 +73,17 @@ def extract_internshala(driver,query):
     # Extract data from each card
     data=[]
     internship_cards = internship_card.find_all('div', class_='individual_internship')
-    for card in internship_cards:
+    for card in internship_cards[:10]:
         title = card.find('a',class_='job-title-href').text.strip() if card.find('a',class_='job-title-href') else 'N/A'
         company = card.find('p','company-name').text.strip() if card.find('p','company-name') else 'N/A'
         location = card.find('div', class_='location').text.strip() if card.find('div', class_='location') else 'N/A'
         stipend = card.find('span', class_='stipend').text.strip()  if card.find('span', class_='stipend') else 'N/A'
-        link = card.find('a')['href'] if card.find('a') else 'N/A'
+        link = INTERNSHALA_BASE_URL+card.find('a')['href'] if card.find('a') else 'N/A'
         data.append([title, company, location, stipend, link])
 
     # Create a DataFrame and save to CSV
     df = pd.DataFrame(data, columns=['Title', 'Company', 'Location', 'Stipend', 'Link'])
-    df.to_csv('internships.csv', index=False)
+    df.to_csv('internships_internshala.csv', index=False)
     print("Data extracted and saved to internships.csv")
 
 
@@ -123,7 +124,7 @@ def scrap_glassdoor(driver,query):
     datas=[]
 
     # Print the URLs
-    for url in urls:
+    for url in urls[:10]:
         try:
             driver.get(url)
             time.sleep(2)
@@ -147,19 +148,59 @@ def scrap_glassdoor(driver,query):
 
     # Create a DataFrame and save to CSV
     df = pd.DataFrame(datas, columns=['Title', 'Company', 'Location', 'Stipend', 'Link'])
-    df.to_csv('internships.csv', index=False)
+    df.to_csv('internships_glassdoor.csv', index=False)
     print("Data extracted and saved to internships_glassdoor.csv")
         
+
+
+def extract_linkedin(driver, query):
+    print(f"Scraping LinkedIn for: {query}")
+
+    # Construct search URL
+    url = f"{LINKEDIN_BASE_URL}{query}"
+    driver.get(url)
+    time.sleep(3)
+
+    # Load results page fully
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CLASS_NAME, 'job-card-list__title'))
+    )
+
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+
+    jobs_data = []
+    cards = soup.find_all('li', class_='jobs-search-results__list-item')
+    for card in cards[:10]:  # Limit to first 10 results
+        try:
+            title_tag = card.find('a', class_='job-card-list__title')
+            title = title_tag.text.strip() if title_tag else 'N/A'
+            link = "https://www.linkedin.com" + title_tag['href'] if title_tag else 'N/A'
+
+            company_tag = card.find('a', class_='job-card-container__company-name')
+            company = company_tag.text.strip() if company_tag else 'N/A'
+
+            location_tag = card.find('span', class_='job-card-container__metadata-item')
+            location = location_tag.text.strip() if location_tag else 'N/A'
+
+            jobs_data.append([title, company, location, 'N/A', link])
+        except Exception as e:
+            print(f"Error parsing job card: {e}")
+            continue
+
+    df = pd.DataFrame(jobs_data, columns=['Title', 'Company', 'Location', 'Stipend', 'Link'])
+    df.to_csv('internships_linkedin.csv', index=False)
+    print("Saved LinkedIn internships to internships_linkedin.csv")
 
 
 if __name__ == "__main__":
     driver = setup_driver()
     for query in SEARCH_QUERY:
-        #extract_internshala(driver,query)
+        extract_internshala(driver,query)
         load_cookies(driver, GLASSDOOR_BASE_URL)
         time.sleep(2)
         scrap_glassdoor(driver,query)
         time.sleep(2)
+        extract_linkedin(driver,query)
     print("Driver setup complete.")
     driver.quit()
     

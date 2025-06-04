@@ -1,42 +1,47 @@
+
+#====Module Imports ======#
+
+from dotenv import load_dotenv
+import logging
+from jobspy_scraper import scrape_jobspy_jobs
 from fastapi import FastAPI, Request, BackgroundTasks
 from fastapi.responses import Response
-from twilio.twiml.messaging_response import MessagingResponse
-import pandas as pd
-import logging
-import time
-from pymongo import MongoClient
-import threading
-from jobspy_scraper import scrape_jobspy_jobs
-from dotenv import load_dotenv
-from pyngrok import ngrok
-from twilio.rest import Client
 import os
-from pyngrok import conf
+import pandas as pd
+from pymongo import MongoClient
+from pyngrok import ngrok,conf
+import re
+import time
+import threading
+from twilio.rest import Client
+from twilio.twiml.messaging_response import MessagingResponse
+import threading
+
+
+#====Module Imports ======#
 
 
 
 
-
+# === LOADING ENVIRONMENT =====#
 
 load_dotenv(".env")
+
 # Your Twilio credentials (use env variables or .env for safety)
 TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
 TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
 TWILIO_PHONE_NUMBER_SID = os.getenv("TWILIO_PHONE_NUMBER_SID")  # e.g. 'PNxxxxxxxxxx'
 conf.get_default().auth_token= os.getenv("NGROK_AUTH_TOKEN")
 twilio_from = os.getenv("TWILIO_PHONE_NUMBER")
-
-
-
-
 app = FastAPI()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("whatsapp_bot")
-
 registered_users = set()
 
+# === LOADING ENVIRONMENT =====#
 
-import re
+
+
 
 
 
@@ -66,6 +71,7 @@ def price_filter(incoming_msg,msg):
             "₹10k+": (10000, float("inf")),
         }
     low, high = price_ranges[incoming_msg]
+         
     try:
         df = pd.read_csv("jobs_jobspy.csv")
         if "min_amount" not in df.columns:
@@ -86,6 +92,8 @@ def price_filter(incoming_msg,msg):
                     )
                 final_message = "\n\n".join(jobs)
                 msg.body(final_message)
+
+
     except Exception as e:
         logger.error(f"Error filtering jobs: {e}")
         msg.body("🚫 Error filtering jobs.")
@@ -112,6 +120,11 @@ def start_ngrok_and_set_webhook():
     return client
 
 
+
+
+          
+    
+     
 def send_notifications(client):
     while True:
         try:
@@ -160,9 +173,7 @@ def send_notifications(client):
             logger.error(f"❌ Error: {e}")
              
                     
-        time.sleep(14400)  # wait for 10 minutes
-
-import threading
+        time.sleep(14400)  
 
 
 
@@ -194,6 +205,10 @@ async def whatsapp_reply(request: Request, background_tasks: BackgroundTasks):
         
     elif incoming_msg == "price filter":
         msg.body("Please choose a price range: ₹0–5k, ₹5k–10k, ₹10k+")
+    
+    elif incoming_msg =="get_user_data":
+         pass
+    
     else:
         msg.body("❓ Unknown command. Try:\n- register\n- get_notification\n- price filter")
 

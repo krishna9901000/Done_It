@@ -1,59 +1,221 @@
 "id","site","job_url","job_url_direct","title","company","location","date_posted","job_type","salary_source","interval","min_amount","max_amount","currency","is_remote","job_level","job_function","listing_type","emails","description","company_industry","company_url","company_logo","company_url_direct","company_addresses","company_num_employees","company_revenue","company_description","skills","experience_range","company_rating","company_reviews_count","vacancy_count","work_from_home_type"
-"in-a91a2ac5d8fc3a2a","indeed","https://in.indeed.com/viewjob?jk=a91a2ac5d8fc3a2a","http://in.indeed.com/job/wordpress-industrial-traininginternship-a91a2ac5d8fc3a2a","Wordpress Industrial Training/internship","M/S Build My Website","PB, IN","2025-06-03","internship","","","","","",False,"","","","","We are looking for passionate WordPress Developer to join our IT team! As a WordPress Developer at our company, you will be responsible for both back\\-end and front\\-end development, including creating WordPress themes and plugins.
+"in-774d3d4bbb737589","indeed","https://in.indeed.com/viewjob?jk=774d3d4bbb737589","https://careers.labcorp.com/global/en/job/258133/Solution-Application-Developer","Solution Application Developer","Labcorp","KA, IN","2025-06-10","fulltime","","","","","",False,"","","","","Required Skills:  
 
-SKILLS EXPERIENCE
-
-* Good understanding of front\\-end technologies, including HTML5, CSS3, JavaScript, jQuery.
-* Experience building user interfaces for websites and/or web applications.
-* MySQL database programming (the WordPress default database).
-* Having knowledge on Shopify is a plus.
-* Experience designing and developing responsive design websites.
-* Experience building user interfaces for websites and/or web applications.
-
-Job Types: Fresher, Internship
-
-Pay: ₹5,074\\.55 \\- ₹10,347\\.27 per month
-
-Benefits:
-
-* Paid sick time
-
-Schedule:
-
-* Night shift
-
-Supplemental Pay:
-
-* Overtime pay
-* Quarterly bonus
-
-Ability to commute/relocate:
-
-* Mohali, Punjab: Reliably commute or planning to relocate before starting work (Preferred)
-
-Shift availability:
-
-* Night Shift (Required)
-
-Work Location: In person","","https://in.indeed.com/cmp/M-S-Build-My-Website","","","","","","","","","","","",""
-"in-4825602b5ec5aa65","indeed","https://in.indeed.com/viewjob?jk=4825602b5ec5aa65","https://www.aspiresys.com/openings/asp-002-0425","Java Developer","Aspire Systems","TN, IN","2025-05-21","fulltime","","","","","",False,"","","","","India
-ID asp\\-002\\-0425
-Full Time
-21/05/2025
-**Key skills:**
+* BS/MS/PHD in Computer Science, or computer applications or related degree.
+* 6\\+ years experience in software development.
+* Solid grasp of object\\-oriented design and design patterns and practices.
+* Mastery of Angular framework and Javascript programming language.
+* Working knowledge of general database principles and preferable experience in MySQL, SQL Server, or Oracle.
+* Experience with Windows and Linux server operating systems, and Docker containers.
+* Experience with cloud\\-based architectures and patterns, such as AWS and Azure.
+* Automation toolsets such as Git flows, CI/CD, unit\\-testing, UI testing, static vulnerability scanning, penetration testing, etc.
+* Time management and prioritization of work/deliverables.
+* Self\\-motivated, work independently and in a team.
+* Excellent problem\\-solving skills.
+* Excellent written and oral communication skills.
+* Cross\\-team collaboration, ability to coordinate with all stakeholders to ensure deliverables and priorities are well\\-aligned.
+* ISO, FDA or other regulated industry training and experience desired.
+**Labcorp is proud to be an Equal Opportunity Employer:**
 
 
-Java with Microservices
+Labcorp strives for inclusion and belonging in the workforce and does not tolerate harassment or discrimination of any kind. We make employment decisions based on the needs of our business and the qualifications and merit of the individual. Qualified applicants will receive consideration for employment without regard to race, religion, color, national origin, sex (including pregnancy, childbirth, or related medical conditions), family or parental status, marital, civil union or domestic partnership status, sexual orientation, gender identity, gender expression, personal appearance, age, veteran status, disability, genetic information, or any other legally protected characteristic. Additionally, all qualified applicants with arrest or conviction records will be considered for employment in accordance with applicable law.
 
-**Job Requirements:**
-
-* Developers who have experience of 4 – 6 yrs in Java with Microservices
-* Need to work from client location, all 5 days
+**We encourage all to apply**
 
 
-Immediate joiners preferred.
+If you are an individual with a disability who needs assistance using our online tools to search and apply for jobs, or needs an accommodation, please visit our accessibility site or contact us at Labcorp Accessibility. For more information about how we collect and store your personal data, please see our Privacy Statement.","","https://in.indeed.com/cmp/Labcorp","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/457c7506ad10c59b8d3d8c3dabfd0d83","http://careers.labcorp.com","Burlington, NC","10,000+","more than $10B (USD)","Labcorp is a leading global life sciences company with unparalleled diagnostics and drug development capabilities. We deliver answers for crucial health questions.","","","","","",""
+"in-67ffafd11276903d","indeed","https://in.indeed.com/viewjob?jk=67ffafd11276903d","https://jobs.sap.com/job/Bangalore-CAP-Developer-CPIT-KA-560066/1182250001/","CAP Developer | CPIT","SAP GROUP","KA, IN","2025-05-14","fulltime","","","","","",False,"","","","Careers@sap.com","W  
+**e help the world run better
+A**
+
+t SAP, we enable you to bring out your best. Our company culture is focused on collaboration and a shared passion to help the world run better. How? We focus every day on building the foundation for tomorrow and creating a workplace that embraces differences, values flexibility, and is aligned to our purpose\\-driven and future\\-focused work. We offer a highly collaborative, caring team environment with a strong focus on learning and development, recognition for your individual contributions, and a variety of benefit options for you to choose from.
 
 
-Interested candidates can directly walk in on the 3rd of May – Siruseri Office.","","https://in.indeed.com/cmp/Aspire-Systems","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/40f07635680e9f274358bb485392001f","https://www.aspiresys.com/","Chennai","1,001 to 5,000","Decline to state","","","","","","",""
-"li-4229950997","linkedin","https://www.linkedin.com/jobs/view/4229950997","","Full Stack Developer","L&T Technology Services","Bengaluru, Karnataka, India","","","","","","","",False,"","","","","","","https://in.linkedin.com/company/l&t-technology-services-limited","","","","","","","","","","","",""
-"li-4243852985","linkedin","https://www.linkedin.com/jobs/view/4243852985","","Java Developer with AWS","Softtek","Bengaluru, Karnataka, India","","","","","","","",False,"","","","","","","https://mx.linkedin.com/company/softtek","","","","","","","","","","","",""
+  
+
+
+S**ummary**
+
+  
+
+
+The Corporate Processes \\& IT (CPIT) organization is responsible for evolving and executing SAP’s IT strategy. We are applying our expertise in technology and business processes by driving the internal adoption of standard applications that support end\\-users in the execution and re\\-engineering of their processes in all lines of business, always putting a strong focus on end\\-user centricity. It is our objective to accelerate co\\-innovation with development and extend the use of SAP standard products within SAP, shifting the focus from maintaining a heavily customized environment to optimizing our processes on top of standard services. By combining technological understanding with business know\\-how and using our own innovative solutions as the earliest adopter, we ensure zero distance between business and technology and act as ultimate proof point in SAP’s transition to a cloud company.
+
+
+
+In the Private Cloud Delivery Organization, we are focusing on the development of solutions for our external and internal stakeholders to ensure a smooth, transparent, and automated way of selling, configuring and provisioning of landscapes to SAP’s private cloud customers.
+
+
+  
+
+
+W**hat you will do**
+
+  
+
+
+We are looking for an experienced CAP Developer to join our growing CPIT Private Cloud Delivery Organization. As a developer, you will be responsible for end\\-to\\-end feature development from requirements, design and implementation across global deployments at scale. The ideal candidate must also possess a strong delivery ethos coupled with a willingness to engage deeply and creatively to solve. The ideal candidate will have at least 4 years of development experience. As part of the job, you will get an opportunity to work with all different functions of Architects, DevOps, QA and Development. Your tasks shall include:
+
+
+  
+
+
+I* n this role you will be supporting the BTP journey to enable Customer Self\\-Service scenarios along the E2E ATLAS process chain.
+
+
+
+Y
+* ou collaborate with cross\\-functional teams to design and develop scalable, clean, and secure solutions using BTP tools and practices.
+
+
+
+W
+* hile implementing best practices and clean code, you’ll stay up\\-to\\-date with industry trends and technologies to drive problem solving and to adapt innovation.
+
+
+
+Y
+* ou support the technical implementation of the ATLAS solutions including web applications like self\\-service with integration from SAP CAP and related business requirements against the project timeline, working in agile mode (SAFe)
+
+
+
+P
+* ost go\\-live technical support of the delivered software
+
+
+
+T
+* ake part in SAFe ceremonies such as Daily Stand\\-Ups, Iteration Planning, Reviews and Retrospectives.
+
+
+  
+
+W
+
+hile you will have your own development tasks to work on, we are also a team with a strong focus on alignments and exchanging development approaches with other team members, our team architect and product owner.
+
+
+  
+
+
+W**hat you bring**
+
+  
+
+
+B* achelor’s degree in Computer Science, Engineering, or a related field
+
+
+
+P
+* ossess 4\\+ years of product development experience.
+
+
+
+S
+* trong cloud native development experience \\- BTP, strong proficiency in SAP Cloud Application Programming (CAP) using NodeJS/Typescript, Java experience is of advantage
+
+
+
+P
+* roficiency in front\\-end frameworks is a plus (SAPUI5, Three.js, React.js) and front\\-end programming languages (HTML5, CSS, JavaScript)
+
+
+
+E
+* xperience /Knowledge in the full life cycle of software development, from design and implementation to testing and deployment and knowledge of agile software development processes.
+
+
+
+K
+* nowledge of lean development infrastructure process including Git, TeamCity, Jenkins etc. and exposure to Continuous Delivery practices
+
+
+
+S
+* trong understanding of distributed systems, data processing frameworks, and cloud\\-native architecture.
+
+
+
+G
+* ood understanding of containerization and CI/CD pipelines
+
+
+
+M
+* ust be able to design and implement across all layers of the software (UI, Backend, Database)
+
+
+
+E
+* xposure to debugging, troubleshooting
+
+
+
+E
+* xperience in working in an agile environment according to SAFe methodology.
+
+
+
+S
+* trong problem\\-solving and analytical skills and attention to detail
+
+
+
+S
+* trong communication and collaboration skills, ability to work in global and cross\\-cultural teams.
+
+
+
+S
+* tructured and goal\\-oriented approach to work.
+
+
+
+F
+* luency in English is a must for this role.
+
+
+  
+
+\\#
+
+DevT2
+
+
+  
+
+
+B**ring out your best**
+
+
+SAP innovations help more than four hundred thousand customers worldwide work together more efficiently and use business insight more effectively. Originally known for leadership in enterprise resource planning (ERP) software, SAP has evolved to become a market leader in end\\-to\\-end business application software and related services for database, analytics, intelligent technologies, and experience management. As a cloud company with two hundred million users and more than one hundred thousand employees worldwide, we are purpose\\-driven and future\\-focused, with a highly collaborative team ethic and commitment to personal development. Whether connecting global industries, people, or platforms, we help ensure every challenge gets the solution it deserves. At SAP, you can bring out your best.
+
+
+
+W**e win with inclusion**
+
+
+SAP’s culture of inclusion, focus on health and well\\-being, and flexible working models help ensure that everyone – regardless of background – feels included and can run at their best. At SAP, we believe we are made stronger by the unique capabilities and qualities that each person brings to our company, and we invest in our employees to inspire confidence and help everyone realize their full potential. We ultimately believe in unleashing all talent and creating a better and more equitable world.
+  
+
+SAP is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to the values of Equal Employment Opportunity and provide accessibility accommodations to applicants with physical and/or mental disabilities. If you are interested in applying for employment with SAP and are in need of accommodation or special assistance to navigate our website or to complete your application, please send an e\\-mail with your request to Recruiting Operations Team: Careers@sap.com
+  
+
+For SAP employees: Only permanent roles are eligible for the SAP Employee Referral Program, according to the eligibility rules set in the SAP Referral Policy. Specific conditions may apply for roles in Vocational Training.
+
+
+
+E**OE AA M/F/Vet/Disability:**
+
+
+Qualified applicants will receive consideration for employment without regard to their age, race, religion, national origin, ethnicity, age, gender (including pregnancy, childbirth, et al), sexual orientation, gender identity or expression, protected veteran status, or disability.
+  
+
+Successful candidates might be required to undergo a background verification with an external vendor.
+
+
+
+R","","https://in.indeed.com/cmp/SAP-Group","","","","","","","","","","","",""
+"li-4233397094","linkedin","https://www.linkedin.com/jobs/view/4233397094","","Java Developer - Associate - Software Engineering","Morgan Stanley","Bengaluru, Karnataka, India","","","","","","","",False,"","","","","","","https://www.linkedin.com/company/morgan-stanley","","","","","","","","","","","",""
+"li-4230677408","linkedin","https://www.linkedin.com/jobs/view/4230677408","","Backend Developer","Picarro","Bengaluru, Karnataka, India","","","","","","","",False,"","","","","","","https://www.linkedin.com/company/picarro-inc-","","","","","","","","","","","",""
